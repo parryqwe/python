@@ -18,11 +18,12 @@ dtype:"float32",int,float,bool
 2.11 empty:number  
 2.12 random.seed:number
 2.13 random.RandomState:number
-
+2.14 add.at:array,list位置,number
 ### 屬性
 ndim,shape,size,itemsize,nbytes,dtype
 ### 方法
 3.1 reshape:tuple
+3.2 copy
 
 ### 取值
 4.1 一維  
@@ -41,4 +42,10 @@ ndim,shape,size,itemsize,nbytes,dtype
 * 可用mask取值
 ### 其他變形方法
 5.1 \[:,np.newaxis\]
+## list
+### 方法
+6.1 append  
+6.2 pop:輸入number,輸出取出值  
+6.3 extend:輸入list  
+
 

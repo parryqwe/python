@@ -2,7 +2,7 @@
 ## 函數
 list,range,type,str,print
 ## 常用參數
-dtype:"float32",int,float  
+dtype:"float32",int,float,bool
 ## numpy
 1.1 array:list,dtype  
 1.2 zeros:number,dtype  
@@ -36,7 +36,8 @@ ndim,shape,size,itemsize,nbytes,dtype
 3.2.2 多個值\[array1,array2\](array1與array2一個一個對應，不足擴充到一樣大)  
 
 3.2.3 範圍:\[::,::\]  
-3.2.4 某一列:\[number\]  
+3.2.4 某一列:\[number\]
+* 可用mask取值
 ### 其他變形方法
 4.1 \[:,np.newaxis\]
 

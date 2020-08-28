@@ -3,7 +3,8 @@
 list,range,type,str,print  
 1.1 enumerate:輸入list,start_index輸出tuple
 ## 常用參數
-dtype:"float32",int,float,bool
+dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10)
+
 ## numpy
 2.1 array:list,dtype  
 2.2 zeros:number,dtype  
@@ -25,11 +26,23 @@ dtype:"float32",int,float,bool
 2.18 split:list,list分割點
 2.19 vsplit:array,list分割點  
 2.20 hsplit:array,list分割點  
+2.21 dtype:dict("name":tuple,"formats":tuple) or list(tuple)
+2.22 argmin:array
+2.23 sort:array  
+2.24 argsort:array,axis
+2.25 partition:array,axis
+2.26 add,subtract,divide,floor_divide,power,mod:array,number
+2.27 abs,add.reduce,multiply.reduce,add.accumulate,multiply.accumulate:array
+2.28 power:number,array
+2.29 multiply.outer:array,array
+2.30 percentile:array,number
+2.31 count_nonzero,sum,any,all:array(裡面放true or false),axis
 ### 屬性
 ndim,shape,size,itemsize,nbytes,dtype
 ### 方法
 3.1 reshape:tuple
 3.2 copy
+3.3 sum.max,min,mean,std.median:axis
 
 ### 取值
 4.1 一維  

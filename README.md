@@ -1,6 +1,6 @@
 # python
 ## 函數
-list,range,type,str  
+list,range,type,str,print
 ## 常用參數
 dtype:"float32",int,float  
 ## numpy
@@ -15,5 +15,15 @@ dtype:"float32",int,float
 1.9 random.randint:min,max,tuple  
 1.10 eye:number  
 1.11 empty:number  
-
+1.12 random.seed:number
+### 屬性
+ndim,shape,size,itemsize,nbytes,dtype
+### 取值
+2.1 一維  
+2.1.1 單一值:[位置]  
+2.1.2 範圍:[起始點:最末點:間隔]  
+2.2 二維  
+2.2.1 單一值:[row,column]  
+2.2.2 範圍:[::,::]  
+2.2.3 某一列:[number]  
 

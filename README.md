@@ -67,6 +67,9 @@ intersection,union,symmetric_difference,difference
 
 2.31 count_nonzero,sum,any,all:array(裡面放true or false),axis  
 
+2.32 zeros_like(array)
+2.33 searchsorted(array1,array2)
+
 ### 屬性
 ndim,shape,size,itemsize,nbytes,dtype  
 

@@ -1,6 +1,6 @@
 # python
 ## 函數
-list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(list,reverse),to_dict
+list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(list,reverse),to_dict,tolist
 1.1 enumerate:輸入list,start_index輸出tuple
 1.2 join:輸入list
 

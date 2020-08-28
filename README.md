@@ -1,6 +1,6 @@
 # python
 ## 函數
-list,range,type,str,print,astype
+list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(list,reverse),to_dict
 1.1 enumerate:輸入list,start_index輸出tuple
 1.2 join:輸入list
 
@@ -11,6 +11,10 @@ str.lower
 ## 時間處理
 pd.to_datetime(format="%Y%m%d"):dayofweek,month,day
 pd.datetime(year,month,day)
+## 字典
+get,items,add,remove,setdefault
+## 集合
+intersection,union,symmetric_difference,difference
 ## numpy
 2.1 array:list,dtype  
 2.2 zeros:number,dtype  
@@ -143,6 +147,7 @@ values,index(.names),columns,T,shape
 8.20 reindex(index方法7.6)
 8.21 sort_index
 8.22 reset_index(columns)
+8.23 isnull
 ###  取值loc,iloc,ix,pd.IndexSlice(多個index,多個columns)
 9.1 Series
 9.1.1 單一值:number
@@ -152,3 +157,8 @@ values,index(.names),columns,T,shape
 9.2 DataFrame
 9.2.1 單一值:\[row,column\] 
 9.2.2 範圍:\[起始點:最末點\,起始點:最末點\]
+# collections
+## defaultdict
+10.1 defaultdict(lambda:0) or defaultdict(list)
+## time
+11.1 time 

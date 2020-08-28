@@ -1,10 +1,16 @@
 # python
 ## 函數
-list,range,type,str,print  
+list,range,type,str,print,astype
 1.1 enumerate:輸入list,start_index輸出tuple
+1.2 join:輸入list
+
 ## 常用參數
 dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10)
-
+## 文字處理
+str.lower
+## 時間處理
+pd.to_datetime(format="%Y%m%d"):dayofweek,month,day
+pd.datetime(year,month,day)
 ## numpy
 2.1 array:list,dtype  
 2.2 zeros:number,dtype  
@@ -53,7 +59,7 @@ dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f
 
 2.29 multiply.outer:array,array  
 
-2.30 percentile:array,number  
+2.30 percentile:array,number(or list)
 
 2.31 count_nonzero,sum,any,all:array(裡面放true or false),axis  
 
@@ -89,5 +95,60 @@ ndim,shape,size,itemsize,nbytes,dtype
 6.2 pop:輸入number,輸出取出值  
 
 6.3 extend:輸入list  
-
-
+## pandas
+7.1 Series
+7.1.1 list,index
+7.1.2 dict
+7.2 DataFrame
+7.2.1 dict(columns_name:Series)
+7.2.2 list(dict)一列一列加
+7.2.3 Series,columns
+7.2.4 array,index,columns
+7.2.5 結構化陣列
+7.3 concat(list(Series or dataframe),axis,ignore_index,keys=list,join,join_axes=list)
+7.4 cut(list,list)
+7.5 qcut(list,number)
+7.6 Index 
+7.6.1 Index(list)
+7.6.2 MultiIndex.from_tuples(list(tuple),names)
+7.6.3 MultiIndex.from_arrays(array,names)
+7.6.4 MultiIndex.from_product(array,names)
+7.6.5 MultiIndex(levels=array,labels=array,names)
+### 屬性
+values,index(.names),columns,T,shape
+### 方法
+8.1 items
+8.2 query("條件")
+8.3 iterrows
+8.4 add(Series,fill_value)
+8.5 stack
+8.5.1 mean
+8.6 subtract(Series,axis)
+8.7 groupby(list,as_index) or groupby(dict)
+8.7.1 rename(dict)
+8.7.2 aggregate(list)統計量 or aggregate(dict(columns:統計量))
+8.7.3 filter(function),transform(function),apply(function)
+8.8 describe
+8.9 unstack(level)
+8.10 set_index(columns)
+8.11 fillna:number
+8.12 value_counts
+8.13 sort_values(by,ascending)
+8.14 replace(number,number)
+8.15 append(dataframe)
+8.16 merge(how,on,left_on,right_on,left_index,right_index,suffixes=list)
+8.17 join(dataframe)
+8.18 mean(axis,level="")
+8.19 pivot.table("",index,columns,margins,aggfunc) or pivot.table(index,columns,aggfunc=dict(columns:統計量))
+8.20 reindex(index方法7.6)
+8.21 sort_index
+8.22 reset_index(columns)
+###  取值loc,iloc,ix,pd.IndexSlice(多個index,多個columns)
+9.1 Series
+9.1.1 單一值:number
+9.1.2 多個值:list
+9.1.3 範圍:\[起始點:最末點\]
+9.1.4 根據條件:\[條件\]
+9.2 DataFrame
+9.2.1 單一值:\[row,column\] 
+9.2.2 範圍:\[起始點:最末點\,起始點:最末點\]

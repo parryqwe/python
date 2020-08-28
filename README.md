@@ -17,28 +17,49 @@ dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f
 2.9 random.randint:min,max,tuple  
 2.10 eye:number  
 2.11 empty:number  
-2.12 random.seed:number
-2.13 random.RandomState:number
-2.14 add.at:array,list位置,number
+2.12 random.seed:number  
+
+2.13 random.RandomState:number  
+
+2.14 add.at:array,list位置,number  
+
 2.15 concatenate:\[array1,array2\],axis  
+
 2.16 vstack:\[array1,array2\]  
+
 2.17 hstack:\[array1,array2\]  
-2.18 split:list,list分割點
+
+2.18 split:list,list分割點  
+
 2.19 vsplit:array,list分割點  
+
 2.20 hsplit:array,list分割點  
-2.21 dtype:dict("name":tuple,"formats":tuple) or list(tuple)
-2.22 argmin:array
+
+2.21 dtype:dict("name":tuple,"formats":tuple) or list(tuple)  
+
+2.22 argmin:array  
+
 2.23 sort:array  
-2.24 argsort:array,axis
-2.25 partition:array,axis
-2.26 add,subtract,divide,floor_divide,power,mod:array,number
-2.27 abs,add.reduce,multiply.reduce,add.accumulate,multiply.accumulate:array
-2.28 power:number,array
-2.29 multiply.outer:array,array
-2.30 percentile:array,number
-2.31 count_nonzero,sum,any,all:array(裡面放true or false),axis
+
+2.24 argsort:array,axis  
+
+2.25 partition:array,axis  
+
+2.26 add,subtract,divide,floor_divide,power,mod:array,number  
+
+2.27 abs,add.reduce,multiply.reduce,add.accumulate,multiply.accumulate:array  
+
+2.28 power:number,array  
+
+2.29 multiply.outer:array,array  
+
+2.30 percentile:array,number  
+
+2.31 count_nonzero,sum,any,all:array(裡面放true or false),axis  
+
 ### 屬性
-ndim,shape,size,itemsize,nbytes,dtype
+ndim,shape,size,itemsize,nbytes,dtype  
+
 ### 方法
 3.1 reshape:tuple
 3.2 copy
@@ -64,7 +85,9 @@ ndim,shape,size,itemsize,nbytes,dtype
 ## list
 ### 方法
 6.1 append  
+
 6.2 pop:輸入number,輸出取出值  
+
 6.3 extend:輸入list  
 
 

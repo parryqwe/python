@@ -77,7 +77,7 @@ ndim,shape,size,itemsize,nbytes,dtype
 3.1 reshape:tuple
 3.2 copy
 3.3 sum.max,min,mean,std.median:axis
-
+3.4 ravel
 ### 取值
 4.1 一維  
 4.1.1 單一值:\[位置\]  

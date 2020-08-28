@@ -21,7 +21,8 @@ dtype:"float32",int,float
 ### 屬性
 ndim,shape,size,itemsize,nbytes,dtype
 ### 方法
-2.1 reshape:tupe　　
+2.1 reshape:tuple
+
 ### 取值
 3.1 一維  
 3.1.1 單一值:\[位置\]
@@ -31,7 +32,10 @@ ndim,shape,size,itemsize,nbytes,dtype
 3.2 二維  
 3.2.1 單一值:\[row,column\]  
 
-3.2.2 多個值\[array1,array2\](array1與array2一個一個對應，不足擴充到一樣大)  　
+3.2.2 多個值\[array1,array2\](array1與array2一個一個對應，不足擴充到一樣大)  
+
 3.2.3 範圍:\[::,::\]  
 3.2.4 某一列:\[number\]  
+### 其他變形方法
+4.1 \[:,np.newaxis\]
 

@@ -1,13 +1,13 @@
 # python
 ## 函數
-list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(list,reverse),to_dict,tolist
+list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(list,reverse),to_dict,tolist,to_json
 1.1 enumerate:輸入list,start_index輸出tuple
 1.2 join:輸入list
 
 ## 常用參數
 dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10)
 ## 文字處理
-str.lower
+str.lower,ast.literal_eval
 ## 時間處理
 pd.to_datetime(format="%Y%m%d"):dayofweek,month,day
 pd.datetime(year,month,day)

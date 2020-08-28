@@ -69,7 +69,7 @@ intersection,union,symmetric_difference,difference
 
 2.32 zeros_like(array)
 2.33 searchsorted(array1,array2)
-
+2.34 random.multivariate_normal(mean,cov,number)
 ### 屬性
 ndim,shape,size,itemsize,nbytes,dtype  
 

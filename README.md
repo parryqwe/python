@@ -1,6 +1,6 @@
 # python
 ## 函數
-list,range,type,str,print
+list,range,type,str,print  
 1.1 enumerate:輸入list,start_index輸出tuple
 ## 常用參數
 dtype:"float32",int,float,bool
@@ -19,6 +19,12 @@ dtype:"float32",int,float,bool
 2.12 random.seed:number
 2.13 random.RandomState:number
 2.14 add.at:array,list位置,number
+2.15 concatenate:\[array1,array2\],axis  
+2.16 vstack:\[array1,array2\]  
+2.17 hstack:\[array1,array2\]  
+2.18 split:list,list分割點
+2.19 vsplit:array,list分割點  
+2.20 hsplit:array,list分割點  
 ### 屬性
 ndim,shape,size,itemsize,nbytes,dtype
 ### 方法

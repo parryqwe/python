@@ -24,6 +24,7 @@ pd.date_range(開始日,結束日) or pd.date_range(日期,periods,freq),pd.peri
 asfreq(freq,method('bfill' or "ffill" or "pad"))
 shift
 tshift
+rolling
 ### from pandas.tseries.offsets import BDay
 Bdays
 ### from datetime import datetime
@@ -90,7 +91,8 @@ intersection,union,symmetric_difference,difference
 
 2.32 zeros_like(array)
 2.33 searchsorted(array1,array2)
-2.34 random.multivariate_normal(mean,cov,number)
+2.34 random.multivariate_normal(mean,cov,number)  
+2.35 where(條件,,)  
 ### 屬性
 ndim,shape,size,itemsize,nbytes,dtype  
 
@@ -172,6 +174,9 @@ values,index(.names),columns,T,shape
 8.21 sort_index  
 8.22 reset_index(columns)  
 8.23 isnull  
+8.24 dropna  
+8.25 eval(text)  
+8.26 resample  
 ###  取值loc,iloc,ix,pd.IndexSlice(多個index,多個columns)
 9.1 Series  
 9.1.1 單一值:number  

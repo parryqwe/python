@@ -7,7 +7,7 @@ list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(
 ## 常用參數
 dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10)
 ## 文字處理
-str.lower,ast.literal_eval
+str.lower,ast.literal_eval,startswith
 ## 時間處理
 pd.to_datetime(format="%Y%m%d"):dayofweek,month,day
 pd.datetime(year,month,day)

@@ -13,18 +13,18 @@ punctuation(屬性)
 ### 正規化re
 sub,IGNORECASE(屬性)
 ## 時間處理
-pd.to_datetime(format="%Y%m%d"):dayofweek,year,month,day,strftime
-pd.datetime(year,month,day)
-pd.to_timedelta(np.arange(12),'D')
-pd.Timedelta(number,"D")
-pd.DatetimeIndex(list)
-to.period("D"):days
-pd.date_range(開始日,結束日) or pd.date_range(日期,periods,freq),pd.period_range(日期,periods,freq),pd.timedelta_range(時間,periods,freq)
-*freq:"H","M","D","2H30T",BDay()
-asfreq(freq,method('bfill' or "ffill" or "pad"))
-shift
-tshift
-rolling
+pd.to_datetime(format="%Y%m%d"):dayofweek,year,month,day,strftime  
+pd.datetime(year,month,day)  
+pd.to_timedelta(np.arange(12),'D')  
+pd.Timedelta(number,"D")  
+pd.DatetimeIndex(list)  
+to.period("D"):days  
+pd.date_range(開始日,結束日) or pd.date_range(日期,periods,freq),pd.period_range(日期,periods,freq),pd.timedelta_range(時間,periods,freq)  
+*freq:"H","M","D","2H30T",BDay()  
+asfreq(freq,method('bfill' or "ffill" or "pad"))  
+shift  
+tshift  
+rolling  
 ### from pandas.tseries.offsets import BDay
 Bdays
 ### from datetime import datetime

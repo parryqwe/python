@@ -5,17 +5,33 @@ list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(
 1.2 join:輸入list
 
 ## 常用參數
-dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10)
+dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10),np.datetime64
 ## 文字處理str
-lower,ast.literal_eval,startswith,capitalize,upper,rjust,center,replace,strip,islower,isdigit,splitlines,join(list),split,extract,len,findall,get,get_dummies
+lower,ast.literal_eval,startswith,capitalize,upper,rjust,center,replace,strip,islower,isdigit,splitlines,join(list),split,extract,len,findall,get,get_dummies,contains
 ### string
 punctuation(屬性)
 ### 正規化re
-sub
-
+sub,IGNORECASE(屬性)
 ## 時間處理
-pd.to_datetime(format="%Y%m%d"):dayofweek,month,day
+pd.to_datetime(format="%Y%m%d"):dayofweek,year,month,day,strftime
 pd.datetime(year,month,day)
+pd.to_timedelta(np.arange(12),'D')
+pd.Timedelta(number,"D")
+pd.DatetimeIndex(list)
+to.period("D"):days
+pd.date_range(開始日,結束日) or pd.date_range(日期,periods,freq),pd.period_range(日期,periods,freq),pd.timedelta_range(時間,periods,freq)
+*freq:"H","M","D","2H30T",BDay()
+asfreq(freq,method('bfill' or "ffill" or "pad"))
+shift
+tshift
+### from pandas.tseries.offsets import BDay
+Bdays
+### from datetime import datetime
+datetime(year,month,day)
+### from dateutil import parser
+parse(text):strftime
+### from pandas_datareader import data
+DataReader(,start,end,data_source)
 ## 字典
 get,items,add,remove,setdefault
 ## 集合

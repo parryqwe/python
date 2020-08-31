@@ -5,7 +5,7 @@ list,range,type,str,print(sep,end),astype,input,sorted(dict,key,reverse),sorted(
 1.2 join:輸入list  
 
 ## 常用參數
-dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10),np.datetime64
+dtype:"float32",int,float,bool,dict("names":tuple,"formats":tuple),'U10','i4','f8',np.float32,(np.str_,10),np.datetime64,"category","object","float64","int64"
 ## 文字處理str
 lower,ast.literal_eval,startswith,capitalize,upper,rjust,center,replace,strip,islower,isdigit,splitlines,join(list),split,extract,len,findall,get,get_dummies,contains
 ### string
@@ -29,6 +29,7 @@ rolling
 Bdays
 ### from datetime import datetime
 datetime(year,month,day)
+datetime.strftime(time,'%Y-%m-%d %H:%M:%S UTC' or '%Y' or "%m" or "%d" or "%H" or "%M" or "%S" or "%w" or "%U")
 ### from dateutil import parser
 parse(text):strftime
 ### from pandas_datareader import data
@@ -164,7 +165,7 @@ values,index(.names),columns,T,shape
 8.11 fillna:number  
 8.12 value_counts  
 8.13 sort_values(by,ascending)  
-8.14 replace(number,number)  
+8.14 replace(number,number)  or replace(dict,inplace)  
 8.15 append(dataframe)  
 8.16 merge(how,on,left_on,right_on,left_index,right_index,suffixes=list)  
 8.17 join(dataframe)  
@@ -177,6 +178,10 @@ values,index(.names),columns,T,shape
 8.24 dropna  
 8.25 eval(text)  
 8.26 resample  
+8.27 drop  
+8.28 select_dtypes(includes)  
+8.29 align(data,join,axis)
+8.30 unique
 ###  取值loc,iloc,ix,pd.IndexSlice(多個index,多個columns)
 9.1 Series  
 9.1.1 單一值:number  

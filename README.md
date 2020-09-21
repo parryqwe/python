@@ -181,8 +181,9 @@ values,index(.names),columns,T,shape
 8.26 resample  
 8.27 drop  
 8.28 select_dtypes(includes)  
-8.29 align(data,join,axis)
-8.30 unique
+8.29 align(data,join,axis)  
+8.30 unique  
+8.31 drop_duplicates(subset,keep='first', inplace=True)  
 ###  取值loc,iloc,ix,pd.IndexSlice(多個index,多個columns)
 9.1 Series  
 9.1.1 單一值:number  
